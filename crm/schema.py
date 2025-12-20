@@ -78,11 +78,14 @@ class CreateCustomer(graphene.Mutation):
             if not re.match(pattern, input.phone):
                 raise Exception("Invalid phone number format")
 
-        customer = Customer.objects.create(
+        customer = Customer(
             name=input.name,
             email=input.email,
             phone=input.phone
         )
+        customer.save()
+
+        
 
         return CreateCustomer(
             customer=customer,
