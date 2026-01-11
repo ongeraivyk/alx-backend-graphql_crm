@@ -5,7 +5,7 @@ from gql.transport.requests import RequestsHTTPTransport
 
 
 LOG_FILE = "/tmp/crm_heartbeat_log.txt"
-LOG_FILE = "/tmp/lowstockupdates_log.txt"
+LOG_FILE = "/tmp/low_stock_updates_log.txt"
 
 def logcrmheartbeat():
     message = f"{datetime.now().strftime('%d/%m/%Y-%H:%M:%S')} CRM is alive"
