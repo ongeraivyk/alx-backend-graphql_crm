@@ -1,6 +1,7 @@
 asgiref==3.11.0
 Django==6.0.1
 django-cors-headers==4.9.0
+django-crontab==0.7.1
 django-filter==25.2
 django-graphql-jwt==0.4.0
 graphene==3.4.3
